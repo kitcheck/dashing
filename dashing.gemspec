@@ -2,10 +2,9 @@
 
 Gem::Specification.new do |s|
   s.name        = 'dashing'
-  s.version     = '1.3.4'
+  s.version     = '1.4.0'
   s.date        = '2014-05-30'
   s.executables = %w(dashing)
-
 
   s.summary     = "The exceptionally handsome dashboard framework."
   s.description = "This framework lets you build & easily layout dashboards with your own custom widgets. Use it to make a status boards for your ops team, or use it to track signups, conversion rates, or whatever else metrics you'd like to see in one spot. Included with the framework are ready-made widgets for you to use or customize. All of this code was extracted out of a project at Shopify that displays dashboards on TVs around the office."
