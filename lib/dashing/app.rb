@@ -50,7 +50,7 @@ end
 end
 
 not_found do
-  send_file File.join(settings.public_folder, '404.html'), status: 404
+  halt 401
 end
 
 at_exit do
@@ -81,7 +81,6 @@ get '/:dashboard' do
     file = File.join(settings.views, "#{params[:dashboard]}.#{suffix}")
     return render(suffix.to_sym, params[:dashboard].to_sym) if File.exist? file
   end
-
   halt 404
 end
 
